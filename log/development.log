@@ -690,3 +690,23 @@ Started GET "/" for ::1 at 2017-08-12 18:55:29 +0900
 Processing by Rails::WelcomeController#index as HTML
   Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
 Completed 200 OK in 20ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (26.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (25.7ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateProducts (20170813070341)
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /Users/tominagaosamuakira/projects/mooovi4/db/migrate/20170813070341_create_products.rb:10)
+  [1m[35m (14.3ms)[0m  CREATE TABLE `products` (`id` int(11) auto_increment PRIMARY KEY, `title` varchar(255), `image_url` text, `director` varchar(255), `detail` text, `open_date` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20170813070341')
+  [1m[36m (3.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mooovi4_development'
+  AND fk.table_name = 'products'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `products`
