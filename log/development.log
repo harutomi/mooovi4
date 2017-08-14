@@ -4443,3 +4443,2739 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_name = 'reviews'
 [0m
   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `reviews`
+
+
+Started GET "/" for ::1 at 2017-08-13 18:51:00 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  `products`.* FROM `products`  ORDER BY id ASC LIMIT 20
+  Rendered products/index.html.erb within layouts/review_site (14.2ms)
+Completed 200 OK in 100ms (Views: 85.3ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-13 18:51:00 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-13 18:51:00 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-13 18:51:00 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-13 18:51:00 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-13 18:51:00 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-13 18:51:00 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-13 18:51:00 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-13 18:51:00 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-13 18:51:00 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-13 18:51:00 +0900
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2017-08-13 18:51:01 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.2ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.4ms)
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-13 18:51:01 +0900
+
+
+Started GET "/products/1" for ::1 at 2017-08-13 18:51:02 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered products/show.html.erb within layouts/review_site (0.4ms)
+Completed 200 OK in 13ms (Views: 4.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/search" for ::1 at 2017-08-13 18:51:04 +0900
+Processing by ProductsController#search as HTML
+  [1m[35mProduct Load (0.6ms)[0m  SELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20
+  Rendered products/search.html.erb within layouts/review_site (3.9ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-13 18:51:05 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  Rendered reviews/new.html.erb within layouts/review_site (3.5ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    33:                 </li>
+    34:               </ul>
+    35:             </div>
+    36:             <%= form_for [@product, @review] do |f| %>
+    37:               <div style="margin: 8px 0">
+    38:                 <%= f.label :ニックネーム, style: { 'margin-right' => 8 } %>
+    39:                 <%= f.text_field :nickname, placeholder: 'ニックネーム' %>
+  app/views/reviews/new.html.erb:36:in `_app_views_reviews_new_html_erb___2573833193008213868_70180779623100'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.3ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-13 18:51:10 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-13 18:51:10 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-13 18:51:10 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-13 18:51:10 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-13 18:51:10 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-13 18:51:10 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-13 18:51:10 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-13 18:51:10 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-13 18:51:10 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-13 18:51:10 +0900
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2017-08-13 18:51:10 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.0ms)
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-13 18:51:10 +0900
+
+
+Started GET "/products/2/reviews/new" for ::1 at 2017-08-13 18:51:13 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"2"}
+  Rendered reviews/new.html.erb within layouts/review_site (1.0ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    33:                 </li>
+    34:               </ul>
+    35:             </div>
+    36:             <%= form_for [@product, @review] do |f| %>
+    37:               <div style="margin: 8px 0">
+    38:                 <%= f.label :ニックネーム, style: { 'margin-right' => 8 } %>
+    39:                 <%= f.text_field :nickname, placeholder: 'ニックネーム' %>
+  app/views/reviews/new.html.erb:36:in `_app_views_reviews_new_html_erb___2573833193008213868_70180779623100'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.5ms)
+
+
+Started GET "/products/search" for ::1 at 2017-08-13 18:51:16 +0900
+Processing by ProductsController#search as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20[0m
+  Rendered products/search.html.erb within layouts/review_site (2.0ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-13 18:51:16 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-13 18:51:16 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-13 18:51:16 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-13 18:51:16 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-13 18:51:16 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-13 18:51:16 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-13 18:51:16 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-13 18:51:16 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-13 18:51:16 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-13 18:51:16 +0900
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2017-08-13 18:51:16 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (77.6ms)
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-13 18:51:16 +0900
+
+
+Started GET "/products/search" for ::1 at 2017-08-13 18:51:20 +0900
+Processing by ProductsController#search as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20
+  Rendered products/search.html.erb within layouts/review_site (3.2ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/search" for ::1 at 2017-08-13 18:51:22 +0900
+Processing by ProductsController#search as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20[0m
+  Rendered products/search.html.erb within layouts/review_site (3.5ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-13 18:51:28 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  Rendered reviews/new.html.erb within layouts/review_site (1.0ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    33:                 </li>
+    34:               </ul>
+    35:             </div>
+    36:             <%= form_for [@product, @review] do |f| %>
+    37:               <div style="margin: 8px 0">
+    38:                 <%= f.label :ニックネーム, style: { 'margin-right' => 8 } %>
+    39:                 <%= f.text_field :nickname, placeholder: 'ニックネーム' %>
+  app/views/reviews/new.html.erb:36:in `_app_views_reviews_new_html_erb___2573833193008213868_70180779623100'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.6ms)
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-13 18:53:27 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered reviews/new.html.erb within layouts/review_site (22.9ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 9.6ms)
+
+ActionView::Template::Error (undefined method `review' for #<Review:0x007fa878c4aae0>
+Did you mean?  reviews
+               reviews?
+               reviews=):
+    43:                 <%= f.number_field :rate, placeholder: '評価', value: 1, max: 10, min: 1, html: { class: "search__query", style: 'text-align: right;' } %>
+    44:               </div>
+    45:               <div style="margin: 8px 0">
+    46:                 <%= f.text_area :review, placeholder: 'レビューを書いてね！', style: 'width: 100%;height: 300px;' %>
+    47:               </div>
+    48:               <div class="row">
+    49:                 <div class="col10 push1">
+  app/views/reviews/new.html.erb:46:in `block in _app_views_reviews_new_html_erb___2573833193008213868_70180779623100'
+  app/views/reviews/new.html.erb:36:in `_app_views_reviews_new_html_erb___2573833193008213868_70180779623100'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.3ms)
+
+
+Started GET "/products/1" for ::1 at 2017-08-13 18:53:34 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered products/show.html.erb within layouts/review_site (0.1ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/1" for ::1 at 2017-08-13 18:53:36 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered products/show.html.erb within layouts/review_site (0.1ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/search" for ::1 at 2017-08-13 18:53:38 +0900
+Processing by ProductsController#search as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20[0m
+  Rendered products/search.html.erb within layouts/review_site (2.6ms)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-13 18:53:39 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered reviews/new.html.erb within layouts/review_site (6.8ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `review' for #<Review:0x007fa87b08b198>
+Did you mean?  reviews
+               reviews?
+               reviews=):
+    43:                 <%= f.number_field :rate, placeholder: '評価', value: 1, max: 10, min: 1, html: { class: "search__query", style: 'text-align: right;' } %>
+    44:               </div>
+    45:               <div style="margin: 8px 0">
+    46:                 <%= f.text_area :review, placeholder: 'レビューを書いてね！', style: 'width: 100%;height: 300px;' %>
+    47:               </div>
+    48:               <div class="row">
+    49:                 <div class="col10 push1">
+  app/views/reviews/new.html.erb:46:in `block in _app_views_reviews_new_html_erb___2573833193008213868_70180779623100'
+  app/views/reviews/new.html.erb:36:in `_app_views_reviews_new_html_erb___2573833193008213868_70180779623100'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.3ms)
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-13 18:54:38 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered reviews/new.html.erb within layouts/review_site (7.2ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `review' for #<Review:0x007fa87b458898>
+Did you mean?  reviews
+               reviews?
+               reviews=):
+    44:             <%= f.number_field :rate, placeholder: '評価', value: 1, max: 10, min: 1, html: { class: "search__query", style: 'text-align: right;' } %>
+    45:           </div>
+    46:           <div style="margin: 8px 0">
+    47:             <%= f.text_area :review, placeholder: 'レビューを書いてね！', style: 'width: 100%;height: 300px;' %>
+    48:           </div>
+    49:           <div class="row">
+    50:             <div class="col10 push1">
+  app/views/reviews/new.html.erb:47:in `block in _app_views_reviews_new_html_erb___2573833193008213868_70180799681220'
+  app/views/reviews/new.html.erb:37:in `_app_views_reviews_new_html_erb___2573833193008213868_70180799681220'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.5ms)
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-13 18:54:40 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered reviews/new.html.erb within layouts/review_site (5.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `review' for #<Review:0x007fa87b2206e8>
+Did you mean?  reviews
+               reviews?
+               reviews=):
+    44:             <%= f.number_field :rate, placeholder: '評価', value: 1, max: 10, min: 1, html: { class: "search__query", style: 'text-align: right;' } %>
+    45:           </div>
+    46:           <div style="margin: 8px 0">
+    47:             <%= f.text_area :review, placeholder: 'レビューを書いてね！', style: 'width: 100%;height: 300px;' %>
+    48:           </div>
+    49:           <div class="row">
+    50:             <div class="col10 push1">
+  app/views/reviews/new.html.erb:47:in `block in _app_views_reviews_new_html_erb___2573833193008213868_70180799681220'
+  app/views/reviews/new.html.erb:37:in `_app_views_reviews_new_html_erb___2573833193008213868_70180799681220'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.4ms)
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-14 16:17:37 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (1.7ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered reviews/new.html.erb within layouts/review_site (21.5ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 1.7ms)
+
+ActionView::Template::Error (undefined method `review' for #<Review:0x007fa878a097b8>
+Did you mean?  reviews
+               reviews?
+               reviews=):
+    44:             <%= f.number_field :rate, placeholder: '評価', value: 1, max: 10, min: 1, html: { class: "search__query", style: 'text-align: right;' } %>
+    45:           </div>
+    46:           <div style="margin: 8px 0">
+    47:             <%= f.text_area :review, placeholder: 'レビューを書いてね！', style: 'width: 100%;height: 300px;' %>
+    48:           </div>
+    49:           <div class="row">
+    50:             <div class="col10 push1">
+  app/views/reviews/new.html.erb:47:in `block in _app_views_reviews_new_html_erb___2573833193008213868_70180799681220'
+  app/views/reviews/new.html.erb:37:in `_app_views_reviews_new_html_erb___2573833193008213868_70180799681220'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.0ms)
+
+
+Started GET "/" for ::1 at 2017-08-14 16:18:39 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  `products`.* FROM `products`  ORDER BY id ASC LIMIT 20
+  Rendered products/index.html.erb within layouts/review_site (13.9ms)
+Completed 200 OK in 95ms (Views: 80.0ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 16:18:39 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 16:18:39 +0900
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 16:18:39 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 16:18:39 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 16:18:39 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 16:18:39 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 16:18:39 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 16:18:39 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 16:18:39 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 16:18:39 +0900
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2017-08-14 16:18:39 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.3ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (101.2ms)
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 16:18:40 +0900
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 16:18:42 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered products/show.html.erb within layouts/review_site (0.5ms)
+Completed 200 OK in 14ms (Views: 4.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 16:18:43 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered products/show.html.erb within layouts/review_site (0.1ms)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 16:18:45 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered products/show.html.erb within layouts/review_site (0.2ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/search" for ::1 at 2017-08-14 16:18:46 +0900
+Processing by ProductsController#search as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20
+  Rendered products/search.html.erb within layouts/review_site (3.3ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/search?utf8=%E2%9C%93&keyword=%E3%82%A8%E3%83%B3%E3%83%89" for ::1 at 2017-08-14 16:18:55 +0900
+Processing by ProductsController#search as HTML
+  Parameters: {"utf8"=>"✓", "keyword"=>"エンド"}
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (title LIKE('%エンド%')) LIMIT 20[0m
+  Rendered products/search.html.erb within layouts/review_site (1.7ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 16:18:55 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 16:18:55 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 16:18:55 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 16:18:55 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 16:18:55 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 16:18:55 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 16:18:55 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 16:18:55 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 16:18:55 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 16:18:55 +0900
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2017-08-14 16:18:55 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (82.4ms)
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 16:18:55 +0900
+
+
+Started GET "/products/3/reviews/new" for ::1 at 2017-08-14 16:18:56 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"3"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  Rendered reviews/new.html.erb within layouts/review_site (32.0ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 6.1ms)
+
+ActionView::Template::Error (undefined method `review' for #<Review:0x007fd51ebecdc8>
+Did you mean?  reviews
+               reviews?
+               reviews=):
+    44:             <%= f.number_field :rate, placeholder: '評価', value: 1, max: 10, min: 1, html: { class: "search__query", style: 'text-align: right;' } %>
+    45:           </div>
+    46:           <div style="margin: 8px 0">
+    47:             <%= f.text_area :review, placeholder: 'レビューを書いてね！', style: 'width: 100%;height: 300px;' %>
+    48:           </div>
+    49:           <div class="row">
+    50:             <div class="col10 push1">
+  app/views/reviews/new.html.erb:47:in `block in _app_views_reviews_new_html_erb__3673389770815445254_70276646329900'
+  app/views/reviews/new.html.erb:37:in `_app_views_reviews_new_html_erb__3673389770815445254_70276646329900'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.8ms)
+
+
+Started GET "/products/3/reviews/new" for ::1 at 2017-08-14 16:25:06 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"3"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1[0m
+  Rendered reviews/new.html.erb within layouts/review_site (7.4ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `review' for #<Review:0x007fd51e072b28>
+Did you mean?  reviews
+               reviews?
+               reviews=):
+    44:             <%= f.number_field :rate, placeholder: '評価', value: 1, max: 10, min: 1, html: { class: "search__query", style: 'text-align: right;' } %>
+    45:           </div>
+    46:           <div style="margin: 8px 0">
+    47:             <%= f.text_area :review, placeholder: 'レビューを書いてね！', style: 'width: 100%;height: 300px;' %>
+    48:           </div>
+    49:           <div class="row">
+    50:             <div class="col10 push1">
+  app/views/reviews/new.html.erb:47:in `block in _app_views_reviews_new_html_erb__3673389770815445254_70276654256100'
+  app/views/reviews/new.html.erb:37:in `_app_views_reviews_new_html_erb__3673389770815445254_70276654256100'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.5ms)
+
+
+Started GET "/products/3/reviews/new" for ::1 at 2017-08-14 16:28:59 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"3"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `authenticate_user!' for #<ReviewsController:0x007fd51cc1cde0>
+Did you mean?  authenticate_with_http_digest):
+  activesupport (4.2.5) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:145:in `block in halting_and_conditional'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.0ms)
+
+
+Started GET "/products/3/reviews/new" for ::1 at 2017-08-14 16:32:35 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"3"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  Rendered reviews/new.html.erb within layouts/review_site (6.3ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 5.6ms)
+
+ActionView::Template::Error (undefined method `review' for #<Review:0x007fd51d0316b0>
+Did you mean?  reviews
+               reviews?
+               reviews=):
+    44:             <%= f.number_field :rate, placeholder: '評価', value: 1, max: 10, min: 1, html: { class: "search__query", style: 'text-align: right;' } %>
+    45:           </div>
+    46:           <div style="margin: 8px 0">
+    47:             <%= f.text_area :review, placeholder: 'レビューを書いてね！', style: 'width: 100%;height: 300px;' %>
+    48:           </div>
+    49:           <div class="row">
+    50:             <div class="col10 push1">
+  app/views/reviews/new.html.erb:47:in `block in _app_views_reviews_new_html_erb__3673389770815445254_70276654256100'
+  app/views/reviews/new.html.erb:37:in `_app_views_reviews_new_html_erb__3673389770815445254_70276654256100'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.4ms)
+
+
+Started GET "/products/3/reviews/new" for ::1 at 2017-08-14 16:33:29 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1[0m
+  Rendered reviews/new.html.erb within layouts/review_site (7.2ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `review' for #<Review:0x007fd51ea8e5a8>
+Did you mean?  reviews
+               reviews?
+               reviews=):
+    44:             <%= f.number_field :rate, placeholder: '評価', value: 1, max: 10, min: 1, html: { class: "search__query", style: 'text-align: right;' } %>
+    45:           </div>
+    46: <!--           <div style="margin: 8px 0">
+    47:             <%= f.text_area :review, placeholder: 'レビューを書いてね！', style: 'width: 100%;height: 300px;' %>
+    48:           </div> -->
+    49:           <div class="row">
+    50:             <div class="col10 push1">
+  app/views/reviews/new.html.erb:47:in `block in _app_views_reviews_new_html_erb__3673389770815445254_70276659557600'
+  app/views/reviews/new.html.erb:37:in `_app_views_reviews_new_html_erb__3673389770815445254_70276659557600'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.1ms)
+
+
+Started GET "/products/3/reviews/new" for ::1 at 2017-08-14 16:33:42 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"3"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  Rendered reviews/new.html.erb within layouts/review_site (6.5ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `review' for #<Review:0x007fd51cf24100>
+Did you mean?  reviews
+               reviews?
+               reviews=):
+    44:             <%= f.number_field :rate, placeholder: '評価', value: 1, max: 10, min: 1, html: { class: "search__query", style: 'text-align: right;' } %>
+    45:           </div>
+    46: <!--           <div style="margin: 8px 0">
+    47:             <%= f.text_area :review, placeholder: 'レビューを書いてね！', style: 'width: 100%;height: 300px;' %>
+    48:           </div> -->
+    49:           <div class="row">
+    50:             <div class="col10 push1">
+  app/views/reviews/new.html.erb:47:in `block in _app_views_reviews_new_html_erb__3673389770815445254_70276645190680'
+  app/views/reviews/new.html.erb:37:in `_app_views_reviews_new_html_erb__3673389770815445254_70276645190680'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.5ms)
+
+
+Started GET "/products/3/reviews/new" for ::1 at 2017-08-14 16:33:44 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1[0m
+  Rendered reviews/new.html.erb within layouts/review_site (5.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `review' for #<Review:0x007fd51fe6b710>
+Did you mean?  reviews
+               reviews?
+               reviews=):
+    44:             <%= f.number_field :rate, placeholder: '評価', value: 1, max: 10, min: 1, html: { class: "search__query", style: 'text-align: right;' } %>
+    45:           </div>
+    46: <!--           <div style="margin: 8px 0">
+    47:             <%= f.text_area :review, placeholder: 'レビューを書いてね！', style: 'width: 100%;height: 300px;' %>
+    48:           </div> -->
+    49:           <div class="row">
+    50:             <div class="col10 push1">
+  app/views/reviews/new.html.erb:47:in `block in _app_views_reviews_new_html_erb__3673389770815445254_70276645190680'
+  app/views/reviews/new.html.erb:37:in `_app_views_reviews_new_html_erb__3673389770815445254_70276645190680'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.8ms)
+
+
+Started GET "/products/3/reviews/new" for ::1 at 2017-08-14 16:33:58 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"3"}
+  [1m[35mProduct Load (0.6ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  Rendered reviews/new.html.erb within layouts/review_site (1.8ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 16:33:58 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 16:33:58 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 16:33:58 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 16:33:58 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 16:33:58 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 16:33:58 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 16:33:58 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 16:33:58 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 16:33:58 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 16:33:58 +0900
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 16:33:58 +0900
+
+
+Started GET "/products/3/reviews/new" for ::1 at 2017-08-14 16:34:01 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1[0m
+  Rendered reviews/new.html.erb within layouts/review_site (1.2ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 16:34:01 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 16:34:01 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 16:34:01 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 16:34:01 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 16:34:01 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 16:34:01 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 16:34:01 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 16:34:01 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 16:34:01 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 16:34:01 +0900
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 16:34:01 +0900
+
+
+Started GET "/products/3/reviews/new" for ::1 at 2017-08-14 16:38:20 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"3"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  Rendered reviews/new.html.erb within layouts/review_site (7.2ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `review' for #<Review:0x007fd51e0b0b30>
+Did you mean?  reviews
+               reviews?
+               reviews=):
+    44:             <%= f.number_field :rate, placeholder: '評価', value: 1, max: 10, min: 1, html: { class: "search__query", style: 'text-align: right;' } %>
+    45:           </div>
+    46:           <div style="margin: 8px 0">
+    47:             <%= f.text_area :review, placeholder: 'レビューを書いてね！', style: 'width: 100%;height: 300px;' %>
+    48:           </div>
+    49:           <div class="row">
+    50:             <div class="col10 push1">
+  app/views/reviews/new.html.erb:47:in `block in _app_views_reviews_new_html_erb__3673389770815445254_70276654386920'
+  app/views/reviews/new.html.erb:37:in `_app_views_reviews_new_html_erb__3673389770815445254_70276654386920'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.2ms)
+
+
+Started GET "/products/3/reviews/new" for ::1 at 2017-08-14 16:40:51 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1[0m
+  Rendered reviews/new.html.erb within layouts/review_site (16.5ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 5.1ms)
+
+ActionView::Template::Error (undefined method `product_reviews_path' for #<#<Class:0x007fd51e9d6e30>:0x007fd51fc52af0>
+Did you mean?  product_path):
+    34:               </ul>
+    35:             </div>
+    36:           </div>
+    37:           <%= form_for [@product, @review] do |f| %>
+    38:           <div style="margin: 8px 0">
+    39:             <%= f.label :nickname, style: { 'margin-right' => 8 } %>
+    40:             <%= f.text_field :nickname, placeholder: 'nickname', value: '' %>
+  app/views/reviews/new.html.erb:37:in `_app_views_reviews_new_html_erb__3673389770815445254_70276654386920'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.6ms)
+
+
+Started GET "/products/3/reviews/new" for ::1 at 2017-08-14 16:40:54 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"3"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  Rendered reviews/new.html.erb within layouts/review_site (20.0ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `product_reviews_path' for #<#<Class:0x007fd51e9d6e30>:0x007fd51e9be290>
+Did you mean?  product_path):
+    34:               </ul>
+    35:             </div>
+    36:           </div>
+    37:           <%= form_for [@product, @review] do |f| %>
+    38:           <div style="margin: 8px 0">
+    39:             <%= f.label :nickname, style: { 'margin-right' => 8 } %>
+    40:             <%= f.text_field :nickname, placeholder: 'nickname', value: '' %>
+  app/views/reviews/new.html.erb:37:in `_app_views_reviews_new_html_erb__3673389770815445254_70276654386920'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.0ms)
+
+
+Started GET "/products/3/reviews/new" for ::1 at 2017-08-14 16:41:07 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1[0m
+  Rendered reviews/new.html.erb within layouts/review_site (6.1ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 5.2ms)
+
+ActionView::Template::Error (undefined method `review' for #<Review:0x007fd51f8786c8>
+Did you mean?  reviews
+               reviews?
+               reviews=):
+    44:             <%= f.number_field :rate, placeholder: '評価', value: 1, max: 10, min: 1, html: { class: "search__query", style: 'text-align: right;' } %>
+    45:           </div>
+    46:           <div style="margin: 8px 0">
+    47:             <%= f.text_area :review, placeholder: 'レビューを書いてね！', style: 'width: 100%;height: 300px;' %>
+    48:           </div>
+    49:           <div class="row">
+    50:             <div class="col10 push1">
+  app/views/reviews/new.html.erb:47:in `block in _app_views_reviews_new_html_erb__3673389770815445254_70276654386920'
+  app/views/reviews/new.html.erb:37:in `_app_views_reviews_new_html_erb__3673389770815445254_70276654386920'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.9ms)
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-14 16:45:44 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered reviews/new.html.erb within layouts/review_site (6.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `review' for #<Review:0x007fd51eb2d798>
+Did you mean?  reviews
+               reviews?
+               reviews=):
+    44:             <%= f.number_field :rate, placeholder: '評価', value: 1, max: 10, min: 1, html: { class: "search__query", style: 'text-align: right;' } %>
+    45:           </div>
+    46:           <div style="margin: 8px 0">
+    47:             <%= f.text_area :review, placeholder: 'レビューを書いてね！', style: 'width: 100%;height: 300px;' %>
+    48:           </div>
+    49:           <div class="row">
+    50:             <div class="col10 push1">
+  app/views/reviews/new.html.erb:47:in `block in _app_views_reviews_new_html_erb__3673389770815445254_70276654386920'
+  app/views/reviews/new.html.erb:37:in `_app_views_reviews_new_html_erb__3673389770815445254_70276654386920'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.5ms)
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-14 16:46:08 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered reviews/new.html.erb within layouts/review_site (1.6ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 16:46:08 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 16:46:08 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 16:46:08 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 16:46:08 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 16:46:08 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 16:46:08 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 16:46:08 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 16:46:08 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 16:46:08 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 16:46:08 +0900
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 16:46:08 +0900
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-14 16:46:27 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered reviews/new.html.erb within layouts/review_site (9.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `review' for #<Review:0x007fd51cb25068>
+Did you mean?  reviews
+               reviews?
+               reviews=):
+    44:             <%= f.number_field :rate, placeholder: '評価', value: 1, max: 10, min: 1, html: { class: "search__query", style: 'text-align: right;' } %>
+    45:           </div>
+    46:           <div style="margin: 8px 0">
+    47:             <%= f.text_area :review, placeholder: 'レビューを書いてね！', style: 'width: 100%;height: 300px;' %>
+    48:           </div>
+    49:           <div class="row">
+    50:             <div class="col10 push1">
+  app/views/reviews/new.html.erb:47:in `block in _app_views_reviews_new_html_erb__3673389770815445254_70276643025040'
+  app/views/reviews/new.html.erb:37:in `_app_views_reviews_new_html_erb__3673389770815445254_70276643025040'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.4ms)
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-14 16:46:47 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered reviews/new.html.erb within layouts/review_site (2.0ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 16:46:47 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 16:46:47 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 16:46:47 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 16:46:47 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 16:46:47 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 16:46:47 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 16:46:47 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 16:46:47 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 16:46:47 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 16:46:47 +0900
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 16:46:47 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to CreateReviews (20170813092856)
+  [1m[36m (7.9ms)[0m  [1mDROP TABLE `reviews`[0m
+  [1m[35mSQL (2.1ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20170813092856'
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mooovi4_development'
+  AND fk.table_name = 'products'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `products`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateReviews (20170813092856)
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /Users/tominagaosamuakira/projects/mooovi4/db/migrate/20170813092856_create_reviews.rb:8)
+  [1m[35m (9.7ms)[0m  CREATE TABLE `reviews` (`id` int(11) auto_increment PRIMARY KEY, `nickname` varchar(255), `rate` int(11), `review` text, `product_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20170813092856')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mooovi4_development'
+  AND fk.table_name = 'products'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `products`
+  [1m[36m (0.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'mooovi4_development'
+  AND fk.table_name = 'reviews'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `reviews`
+
+
+Started GET "/" for ::1 at 2017-08-14 16:55:10 +0900
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products`  ORDER BY id ASC LIMIT 20[0m
+  Rendered products/index.html.erb within layouts/review_site (7.3ms)
+Completed 200 OK in 15ms (Views: 9.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2017-08-14 16:55:10 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (65.2ms)
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 16:55:11 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered products/show.html.erb within layouts/review_site (0.1ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 16:55:13 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered products/show.html.erb within layouts/review_site (0.1ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 16:55:14 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (1.1ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered products/show.html.erb within layouts/review_site (0.1ms)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 16:55:14 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered products/show.html.erb within layouts/review_site (0.1ms)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 16:55:14 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered products/show.html.erb within layouts/review_site (0.1ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 16:59:33 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered products/show.html.erb within layouts/review_site (0.4ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 16:59:33 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 16:59:33 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 16:59:33 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 16:59:33 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 16:59:33 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 16:59:33 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 16:59:33 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 16:59:33 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 16:59:33 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 16:59:33 +0900
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 16:59:33 +0900
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-14 16:59:35 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[35mProduct Load (0.6ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered reviews/new.html.erb within layouts/review_site (2.8ms)
+Completed 200 OK in 18ms (Views: 8.3ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/products/1/reviews" for ::1 at 2017-08-14 17:01:01 +0900
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AJ3mO3YidAYapEriphAB4vJO67t81cx9XukzAD9kGe/yjwXVfeQF9ycqkJVXFF16STvUWpIorxFWDItCATB0og==", "review"=>{"nickname"=>"あああ", "rate"=>"1", "review"=>"あああ"}, "button"=>"", "product_id"=>"1"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `reviews` (`nickname`, `rate`, `review`, `product_id`, `created_at`, `updated_at`) VALUES ('あああ', 1, 'あああ', 1, '2017-08-14 08:01:01', '2017-08-14 08:01:01')
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-08-14 17:01:01 +0900
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  `products`.* FROM `products`  ORDER BY id ASC LIMIT 20
+  Rendered products/index.html.erb within layouts/review_site (1.5ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 17:01:01 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 17:01:01 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 17:01:01 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 17:01:01 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 17:01:01 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 17:01:01 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 17:01:01 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 17:01:01 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 17:01:01 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 17:01:01 +0900
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2017-08-14 17:01:01 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.9ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.2ms)
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 17:01:01 +0900
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 17:01:02 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered products/show.html.erb within layouts/review_site (0.2ms)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-14 17:01:06 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered reviews/new.html.erb within layouts/review_site (2.3ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/products/1/reviews" for ::1 at 2017-08-14 17:01:13 +0900
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O0Drgn/pOCWnrkzDJkxR+uoqP3FCCKeDnEjwxrpl4bfJUghsdC9J1JoglrTXSA1iUV8AkKz1xO+UrUiEhDGM+g==", "review"=>{"nickname"=>"あああ", "rate"=>"1", "review"=>"あああい"}, "button"=>"", "product_id"=>"1"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO `reviews` (`nickname`, `rate`, `review`, `product_id`, `created_at`, `updated_at`) VALUES ('あああ', 1, 'あああい', 1, '2017-08-14 08:01:13', '2017-08-14 08:01:13')
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2017-08-14 17:01:13 +0900
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  `products`.* FROM `products`  ORDER BY id ASC LIMIT 20
+  Rendered products/index.html.erb within layouts/review_site (1.5ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 17:01:13 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 17:01:13 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 17:01:13 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 17:01:13 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 17:01:13 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 17:01:13 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 17:01:13 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 17:01:13 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 17:01:13 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 17:01:13 +0900
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2017-08-14 17:01:13 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.4ms)
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 17:01:13 +0900
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 17:02:00 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered products/show.html.erb within layouts/review_site (0.1ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-14 17:02:01 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered reviews/new.html.erb within layouts/review_site (2.2ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-14 17:04:26 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered reviews/new.html.erb within layouts/review_site (1.9ms)
+Completed 200 OK in 23ms (Views: 7.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-14 17:04:27 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered reviews/new.html.erb within layouts/review_site (1.9ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-08-14 17:04:29 +0900
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT  `products`.* FROM `products`  ORDER BY id ASC LIMIT 20[0m
+  Rendered products/index.html.erb within layouts/review_site (2.6ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 17:04:30 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered products/show.html.erb within layouts/review_site (0.2ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-14 17:06:39 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered reviews/new.html.erb within layouts/review_site (1.9ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/products/1/reviews" for ::1 at 2017-08-14 17:06:44 +0900
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BHFJnZZpCJ/CNbbtjuOoXqED4JggpmbWA4x5lT4ejmP2Y6pzna95bv+7bJp/5/TGGnbfec5bBboLacHXAErjLg==", "review"=>{"nickname"=>"いいい", "rate"=>"1", "review"=>"あああ"}, "button"=>"", "product_id"=>"1"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `reviews` (`nickname`, `rate`, `review`, `product_id`, `created_at`, `updated_at`) VALUES ('いいい', 1, 'あああ', 1, '2017-08-14 08:06:44', '2017-08-14 08:06:44')[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-08-14 17:06:44 +0900
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products`  ORDER BY id ASC LIMIT 20[0m
+  Rendered products/index.html.erb within layouts/review_site (1.3ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 17:06:44 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 17:06:44 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 17:06:44 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 17:06:44 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 17:06:44 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 17:06:44 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 17:06:44 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 17:06:44 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 17:06:44 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 17:06:44 +0900
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2017-08-14 17:06:44 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (83.7ms)
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 17:06:44 +0900
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 17:06:45 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.7ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered products/show.html.erb within layouts/review_site (0.1ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 17:10:41 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered products/show.html.erb within layouts/review_site (26.9ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `review' for #<#<Class:0x007fd51ec25c18>:0x007fd51e90e9f8>):
+    31:                       <span class="rating-star"><i class="star-actived rate-00"></i></span>
+    32:                     </p>
+    33:                     <p>
+    34:                       <%= review.review %>
+    35:                     </p>
+    36:                   </div>
+    37:                 </li>
+  app/views/products/show.html.erb:34:in `_app_views_products_show_html_erb___1976801257948888665_70276658756320'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.3ms)
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 17:11:06 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered products/show.html.erb within layouts/review_site (22.1ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `reviews' for #<#<Class:0x007fd51ec25c18>:0x007fd51e0f31b0>):
+    31:                       <span class="rating-star"><i class="star-actived rate-00"></i></span>
+    32:                     </p>
+    33:                     <p>
+    34:                       <%= reviews.review %>
+    35:                     </p>
+    36:                   </div>
+    37:                 </li>
+  app/views/products/show.html.erb:34:in `_app_views_products_show_html_erb___1976801257948888665_70276654531460'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.1ms)
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 17:11:47 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered products/show.html.erb within layouts/review_site (0.4ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 17:11:47 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 17:11:47 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 17:11:47 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 17:11:47 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 17:11:47 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 17:11:47 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 17:11:47 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 17:11:47 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 17:11:47 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 17:11:47 +0900
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 17:11:47 +0900
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 17:20:49 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered products/show.html.erb within layouts/review_site (0.1ms)
+Completed 200 OK in 24ms (Views: 7.9ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 17:20:49 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 17:20:49 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 17:20:49 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 17:20:49 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 17:20:49 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 17:20:49 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 17:20:49 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 17:20:49 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 17:20:49 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 17:20:49 +0900
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 17:20:49 +0900
+
+
+Started GET "/" for ::1 at 2017-08-14 17:20:51 +0900
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  `products`.* FROM `products`  ORDER BY id ASC LIMIT 20[0m
+  Rendered products/index.html.erb within layouts/review_site (2.8ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2017-08-14 17:20:51 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.6ms)
+
+
+Started GET "/" for ::1 at 2017-08-14 17:20:53 +0900
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  `products`.* FROM `products`  ORDER BY id ASC LIMIT 20
+  Rendered products/index.html.erb within layouts/review_site (2.7ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 17:20:53 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 17:20:53 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 17:20:53 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 17:20:53 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 17:20:53 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 17:20:53 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 17:20:53 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 17:20:53 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 17:20:53 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 17:20:53 +0900
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2017-08-14 17:20:53 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (79.7ms)
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 17:20:53 +0900
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 17:20:54 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered products/show.html.erb within layouts/review_site (0.1ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-14 17:20:56 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered reviews/new.html.erb within layouts/review_site (1.9ms)
+Completed 200 OK in 26ms (Views: 8.1ms | ActiveRecord: 6.5ms)
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT  `reviews`.* FROM `reviews`  ORDER BY `reviews`.`id` ASC LIMIT 1[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 1[0m
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-14 17:23:43 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered reviews/new.html.erb within layouts/review_site (1.3ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 17:23:43 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 17:23:43 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 17:23:43 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 17:23:43 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 17:23:43 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 17:23:43 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 17:23:43 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 17:23:43 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 17:23:43 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 17:23:43 +0900
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 17:23:43 +0900
+
+
+Started POST "/products/1/reviews" for ::1 at 2017-08-14 17:23:48 +0900
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O1cwuGgGHDJ7wXL4Hq/Wbqa3rxfbBpwf4VjvXcnx8IDJRdNWY8Btw0ZPqI/vq4r2HcKQ9jX7/3PpvVcf96WdzQ==", "review"=>{"nickname"=>"aa", "rate"=>"1", "review"=>"aa"}, "button"=>"", "product_id"=>"1"}
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `reviews` (`nickname`, `rate`, `review`, `product_id`, `created_at`, `updated_at`) VALUES ('aa', 1, 'aa', 1, '2017-08-14 08:23:48', '2017-08-14 08:23:48')[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2017-08-14 17:23:48 +0900
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  `products`.* FROM `products`  ORDER BY id ASC LIMIT 20[0m
+  Rendered products/index.html.erb within layouts/review_site (2.6ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 17:23:48 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 17:23:48 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 17:23:48 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 17:23:48 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 17:23:48 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 17:23:48 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 17:23:48 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 17:23:48 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 17:23:48 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 17:23:49 +0900
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2017-08-14 17:23:49 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (88.5ms)
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 17:23:49 +0900
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 17:23:50 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered products/show.html.erb within layouts/review_site (27.9ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `review' for #<#<Class:0x007fd51cfce7e0>:0x007fd51fbbbd80>):
+    31:                       <span class="rating-star"><i class="star-actived rate-00"></i></span>
+    32:                     </p>
+    33:                     <p>
+    34:                       <%= review.review %>
+    35:                     </p>
+    36:                   </div>
+    37:                 </li>
+  app/views/products/show.html.erb:34:in `_app_views_products_show_html_erb___1976801257948888665_70276668573380'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.9ms)
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 17:24:47 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered products/show.html.erb within layouts/review_site (7.8ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `reviews' for #<Product:0x007fd51e90ce28>
+Did you mean?  review
+               review=):
+    22:                 </h2>
+    23:               </header>
+    24:               <ul style="padding: 0">
+    25:                 <% @product.reviews.each do |review| %>
+    26:                 <li style="border-bottom: dotted 1px">
+    27:                   <div class="thumbnail__caption">
+    28:                     <h3 class="text-xsmall text-overflow" title="<%= review.nickname %>">
+  app/views/products/show.html.erb:25:in `_app_views_products_show_html_erb___1976801257948888665_70276658734680'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.3ms)
+
+
+Started POST "/products/1/reviews" for ::1 at 2017-08-14 17:24:53 +0900
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O1cwuGgGHDJ7wXL4Hq/Wbqa3rxfbBpwf4VjvXcnx8IDJRdNWY8Btw0ZPqI/vq4r2HcKQ9jX7/3PpvVcf96WdzQ==", "review"=>{"nickname"=>"aa", "rate"=>"1", "review"=>"aa"}, "button"=>"", "product_id"=>"1"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `reviews` (`nickname`, `rate`, `review`, `product_id`, `created_at`, `updated_at`) VALUES ('aa', 1, 'aa', 1, '2017-08-14 08:24:53', '2017-08-14 08:24:53')[0m
+  [1m[35m (1.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2017-08-14 17:24:53 +0900
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products`  ORDER BY id ASC LIMIT 20[0m
+  Rendered products/index.html.erb within layouts/review_site (1.3ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 17:24:53 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 17:24:53 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 17:24:53 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 17:24:53 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 17:24:53 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 17:24:53 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 17:24:53 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 17:24:53 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 17:24:53 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 17:24:53 +0900
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2017-08-14 17:24:53 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.5ms)
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 17:24:53 +0900
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 17:24:54 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.5ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered products/show.html.erb within layouts/review_site (6.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `reviews' for #<Product:0x007fd51fcca2d0>
+Did you mean?  review
+               review=):
+    22:                 </h2>
+    23:               </header>
+    24:               <ul style="padding: 0">
+    25:                 <% @product.reviews.each do |review| %>
+    26:                 <li style="border-bottom: dotted 1px">
+    27:                   <div class="thumbnail__caption">
+    28:                     <h3 class="text-xsmall text-overflow" title="<%= review.nickname %>">
+  app/views/products/show.html.erb:25:in `_app_views_products_show_html_erb___1976801257948888665_70276658734680'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.9ms)
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 17:25:37 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered products/show.html.erb within layouts/review_site (5.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `reviews' for #<Product:0x007fd51f9e82d8>
+Did you mean?  review
+               review=):
+    22:                 </h2>
+    23:               </header>
+    24:               <ul style="padding: 0">
+    25:                 <% @product.reviews.each do |review| %>
+    26:                 <li style="border-bottom: dotted 1px">
+    27:                   <div class="thumbnail__caption">
+    28:                     <h3 class="text-xsmall text-overflow" title="<%= review.nickname %>">
+  app/views/products/show.html.erb:25:in `_app_views_products_show_html_erb___1976801257948888665_70276667605600'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.1ms)
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 17:25:55 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered products/show.html.erb within layouts/review_site (10.6ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 2.6ms)
+
+ActionView::Template::Error (undefined method `reviews' for #<Product:0x007fc689c19880>
+Did you mean?  review
+               review=):
+    22:                 </h2>
+    23:               </header>
+    24:               <ul style="padding: 0">
+    25:                 <% @product.reviews.each do |review| %>
+    26:                 <li style="border-bottom: dotted 1px">
+    27:                   <div class="thumbnail__caption">
+    28:                     <h3 class="text-xsmall text-overflow" title="<%= review.nickname %>">
+  app/views/products/show.html.erb:25:in `_app_views_products_show_html_erb__3179305650894681334_70245366078240'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.7ms)
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 17:26:11 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mReview Load (0.3ms)[0m  SELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 1
+  Rendered products/show.html.erb within layouts/review_site (22.0ms)
+Completed 200 OK in 55ms (Views: 50.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 17:26:12 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 17:26:12 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 17:26:12 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 17:26:12 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 17:26:12 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 17:26:12 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 17:26:12 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 17:26:12 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 17:26:12 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 17:26:12 +0900
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 17:26:12 +0900
+
+
+Started GET "/products/1/reviews/new" for ::1 at 2017-08-14 17:26:32 +0900
+Processing by ReviewsController#new as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered reviews/new.html.erb within layouts/review_site (19.6ms)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/products/1/reviews" for ::1 at 2017-08-14 17:26:35 +0900
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T/sV3S5NGCddWn3YUWDfYpCaIWJiScD62Gw6GGpfmR696fYzJYtp1mDUp6+gZIP6K+8eg4y0o5bQiYJaVAv0Uw==", "review"=>{"nickname"=>"a", "rate"=>"1", "review"=>"a"}, "button"=>"", "product_id"=>"1"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `reviews` (`nickname`, `rate`, `review`, `product_id`, `created_at`, `updated_at`) VALUES ('a', 1, 'a', 1, '2017-08-14 08:26:35', '2017-08-14 08:26:35')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-08-14 17:26:35 +0900
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT  `products`.* FROM `products`  ORDER BY id ASC LIMIT 20[0m
+  Rendered products/index.html.erb within layouts/review_site (4.0ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 17:26:35 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 17:26:35 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 17:26:35 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 17:26:35 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 17:26:35 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 17:26:35 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 17:26:35 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 17:26:35 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 17:26:35 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 17:26:35 +0900
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2017-08-14 17:26:35 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.8ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.6ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (115.5ms)
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 17:26:35 +0900
+
+
+Started GET "/products/1" for ::1 at 2017-08-14 17:29:20 +0900
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT `reviews`.* FROM `reviews` WHERE `reviews`.`product_id` = 1[0m
+  Rendered products/show.html.erb within layouts/review_site (1.5ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/search" for ::1 at 2017-08-14 17:29:24 +0900
+Processing by ProductsController#search as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  `products`.* FROM `products` WHERE (title LIKE('%%')) LIMIT 20
+  Rendered products/search.html.erb within layouts/review_site (4.0ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/search?utf8=%E2%9C%93&keyword=%E3%82%AA%E3%82%AA%E3%82%AB%E3%83%9F" for ::1 at 2017-08-14 17:29:28 +0900
+Processing by ProductsController#search as HTML
+  Parameters: {"utf8"=>"✓", "keyword"=>"オオカミ"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (title LIKE('%オオカミ%')) LIMIT 20[0m
+  Rendered products/search.html.erb within layouts/review_site (1.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 17:29:28 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 17:29:28 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 17:29:28 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 17:29:28 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 17:29:28 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 17:29:28 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 17:29:28 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 17:29:28 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 17:29:28 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 17:29:28 +0900
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2017-08-14 17:29:28 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (64.4ms)
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 17:29:28 +0900
+
+
+Started GET "/products/search?utf8=%E2%9C%93&keyword=%E3%82%B5%E3%83%97%E3%83%A9%E3%82%A4%E3%82%BA" for ::1 at 2017-08-14 17:29:45 +0900
+Processing by ProductsController#search as HTML
+  Parameters: {"utf8"=>"✓", "keyword"=>"サプライズ"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  `products`.* FROM `products` WHERE (title LIKE('%サプライズ%')) LIMIT 20
+  Rendered products/search.html.erb within layouts/review_site (1.1ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 17:29:45 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 17:29:45 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 17:29:45 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 17:29:45 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 17:29:45 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 17:29:45 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 17:29:45 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 17:29:45 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 17:29:45 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 17:29:45 +0900
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2017-08-14 17:29:45 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.3ms)
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 17:29:45 +0900
+
+
+Started GET "/products/search?utf8=%E2%9C%93&keyword=%E3%82%AA%E3%82%AA%E3%82%AB%E3%83%9F" for ::1 at 2017-08-14 17:30:37 +0900
+Processing by ProductsController#search as HTML
+  Parameters: {"utf8"=>"✓", "keyword"=>"オオカミ"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (title LIKE('%オオカミ%')) LIMIT 20[0m
+  Rendered products/search.html.erb within layouts/review_site (1.3ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2017-08-14 17:30:37 +0900
+
+
+Started GET "/assets/review_site.css?body=1" for ::1 at 2017-08-14 17:30:37 +0900
+
+
+Started GET "/assets/ranking.css?body=1" for ::1 at 2017-08-14 17:30:37 +0900
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2017-08-14 17:30:37 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2017-08-14 17:30:37 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2017-08-14 17:30:37 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2017-08-14 17:30:37 +0900
+
+
+Started GET "/assets/ranking.js?body=1" for ::1 at 2017-08-14 17:30:37 +0900
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2017-08-14 17:30:37 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2017-08-14 17:30:37 +0900
+
+
+Started GET "/images/icons/icon-movie-poster.png" for ::1 at 2017-08-14 17:30:37 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/icons/icon-movie-poster.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/tominagaosamuakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (65.0ms)
+
+
+Started GET "/assets/bambi-1.0.0.ttf?20140712" for ::1 at 2017-08-14 17:30:37 +0900
